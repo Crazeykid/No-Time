@@ -1,17 +1,17 @@
 [gd_scene load_steps=6 format=3 uid="uid://crotavunc6gnd"]
 
 [ext_resource type="Script" uid="uid://c0lhcxnrmljgp" path="res://character_body_2d.gd" id="1_ij6vw"]
-[ext_resource type="Texture2D" uid="uid://cdlmis0kqsif5" path="res://icon.svg" id="2_ghijl"]
+[ext_resource type="Texture2D" uid="uid://xdxd8c411dcm" path="res://NO TIME BASEPLATE SHEET.png" id="2_ij6vw"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_44cfe"]
-atlas = ExtResource("2_ghijl")
-region = Rect2(0, 0, 128, 128)
+[sub_resource type="AtlasTexture" id="AtlasTexture_ghijl"]
+atlas = ExtResource("2_ij6vw")
+region = Rect2(224, 32, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_dd465"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_44cfe")
+"texture": SubResource("AtlasTexture_ghijl")
 }],
 "loop": true,
 "name": &"default",
