@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=4 uid="uid://1c87it6otfgd"]
 
 [ext_resource type="Texture2D" uid="uid://xdxd8c411dcm" path="res://SPRITE SHEETS/NO TIME BASEPLATE SHEET.png" id="1_vx6k8"]
-[ext_resource type="PackedScene" uid="uid://crotavunc6gnd" path="res://PLAYER MODEL/character_body_2d.tscn" id="2_nbnk0"]
+[ext_resource type="PackedScene" uid="uid://crotavunc6gnd" path="res://PLAYER MODEL/Player.tscn" id="2_nbnk0"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pe8na"]
 texture = ExtResource("1_vx6k8")
