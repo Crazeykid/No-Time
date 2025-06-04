@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://crotavunc6gnd"]
 
 [ext_resource type="Texture2D" uid="uid://dhu4yhoj7i7e3" path="res://SPRITE SHEETS/NO TIME BASEPLATE SHEET.png" id="2_ij6vw"]
-[ext_resource type="PackedScene" uid="uid://t0je444ggxcq" path="res://MODELS/Gun.tscn" id="2_ytdf1"]
+[ext_resource type="PackedScene" uid="uid://bcue6m8u6ar0w" path="res://MODELS/shotgun.tscn" id="2_ncs21"]
 
 [sub_resource type="GDScript" id="GDScript_a128t"]
 script/source = "extends CharacterBody2D
@@ -44,4 +44,4 @@ sprite_frames = SubResource("SpriteFrames_dd465")
 zoom = Vector2(5, 5)
 position_smoothing_speed = 8.0
 
-[node name="Gun" parent="." instance=ExtResource("2_ytdf1")]
+[node name="Shotgun" parent="." instance=ExtResource("2_ncs21")]
