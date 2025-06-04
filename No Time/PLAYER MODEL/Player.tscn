@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://crotavunc6gnd"]
+[gd_scene load_steps=7 format=3 uid="uid://crotavunc6gnd"]
 
 [ext_resource type="Texture2D" uid="uid://dimqxpmos7s37" path="res://SPRITE SHEETS/NO TIME BASEPLATE SHEET.png" id="2_ij6vw"]
+[ext_resource type="PackedScene" uid="uid://t0je444ggxcq" path="res://collision_shape_2d.tscn" id="2_ytdf1"]
 
 [sub_resource type="GDScript" id="GDScript_a128t"]
 script/source = "extends CharacterBody2D
@@ -42,3 +43,5 @@ sprite_frames = SubResource("SpriteFrames_dd465")
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(2.5, 2.5)
 position_smoothing_speed = 8.0
+
+[node name="Gun" parent="." instance=ExtResource("2_ytdf1")]
