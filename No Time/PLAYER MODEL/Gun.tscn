@@ -1,10 +1,10 @@
 [gd_scene load_steps=5 format=3 uid="uid://t0je444ggxcq"]
 
-[ext_resource type="Script" uid="uid://c86jywac45jag" path="res://collision_shape_2d.gd" id="1_p8qpx"]
-[ext_resource type="Texture2D" uid="uid://d2b8l3m7ujcn7" path="res://SPRITE SHEETS/Gun.png" id="2_y8tii"]
+[ext_resource type="Script" path="res://collision_shape_2d.gd" id="1_jub0h"]
+[ext_resource type="Texture2D" uid="uid://d2b8l3m7ujcn7" path="res://SPRITE SHEETS/Gun.png" id="2_s513d"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vu47p"]
-atlas = ExtResource("2_y8tii")
+atlas = ExtResource("2_s513d")
 region = Rect2(0, 0, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_03irm"]
@@ -19,7 +19,7 @@ animations = [{
 }]
 
 [node name="Gun" type="CollisionShape2D"]
-script = ExtResource("1_p8qpx")
+script = ExtResource("1_jub0h")
 
 [node name="PivotPoint" type="Marker2D" parent="."]
 
