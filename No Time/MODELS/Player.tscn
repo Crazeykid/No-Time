@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://crotavunc6gnd"]
 
-[ext_resource type="Texture2D" uid="uid://dimqxpmos7s37" path="res://SPRITE SHEETS/NO TIME BASEPLATE SHEET.png" id="2_ij6vw"]
-[ext_resource type="PackedScene" uid="uid://t0je444ggxcq" path="res://PLAYER MODEL/Gun.tscn" id="2_ytdf1"]
+[ext_resource type="Texture2D" uid="uid://dhu4yhoj7i7e3" path="res://SPRITE SHEETS/NO TIME BASEPLATE SHEET.png" id="2_ij6vw"]
+[ext_resource type="PackedScene" uid="uid://t0je444ggxcq" path="res://MODELS/Gun.tscn" id="2_ytdf1"]
 
 [sub_resource type="GDScript" id="GDScript_a128t"]
 script/source = "extends CharacterBody2D
@@ -9,22 +9,22 @@ script/source = "extends CharacterBody2D
 
 func _physics_process(delta: float) -> void:
 	var direction = Input.get_vector(\"Left\", \"Right\", \"Up\", \"Down\")
-	velocity = direction * 200
+	velocity = direction * 125
 	move_and_slide()
 "
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lhvu3"]
 size = Vector2(14, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_a128t"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_ytdf1"]
 atlas = ExtResource("2_ij6vw")
-region = Rect2(240, 32, 16, 16)
+region = Rect2(16, 0, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_dd465"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_a128t")
+"texture": SubResource("AtlasTexture_ytdf1")
 }],
 "loop": true,
 "name": &"default",
@@ -41,7 +41,7 @@ shape = SubResource("RectangleShape2D_lhvu3")
 sprite_frames = SubResource("SpriteFrames_dd465")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(2.5, 2.5)
+zoom = Vector2(5, 5)
 position_smoothing_speed = 8.0
 
 [node name="Gun" parent="." instance=ExtResource("2_ytdf1")]
