@@ -1,17 +1,8 @@
 [gd_scene load_steps=7 format=3 uid="uid://crotavunc6gnd"]
 
+[ext_resource type="Script" uid="uid://bf22x081h652h" path="res://SCRIPTS/player.gd" id="1_dywot"]
 [ext_resource type="Texture2D" uid="uid://dhu4yhoj7i7e3" path="res://SPRITE SHEETS/NO TIME BASEPLATE SHEET.png" id="2_ij6vw"]
 [ext_resource type="PackedScene" uid="uid://bcue6m8u6ar0w" path="res://MODELS/shotgun.tscn" id="2_ncs21"]
-
-[sub_resource type="GDScript" id="GDScript_a128t"]
-script/source = "extends CharacterBody2D
-
-
-func _physics_process(delta: float) -> void:
-	var direction = Input.get_vector(\"Left\", \"Right\", \"Up\", \"Down\")
-	velocity = direction * 125
-	move_and_slide()
-"
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lhvu3"]
 size = Vector2(14, 16)
@@ -32,7 +23,7 @@ animations = [{
 }]
 
 [node name="Player" type="CharacterBody2D"]
-script = SubResource("GDScript_a128t")
+script = ExtResource("1_dywot")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_lhvu3")
