@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://bcue6m8u6ar0w" path="res://WEAPONS/shotgun.tscn" id="2_ncs21"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lhvu3"]
-size = Vector2(14, 16)
+size = Vector2(12, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ytdf1"]
 atlas = ExtResource("2_ij6vw")

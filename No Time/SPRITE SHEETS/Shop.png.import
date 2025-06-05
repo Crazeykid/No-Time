@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bjo0q6c4tjcv8"
-path="res://.godot/imported/icon_p.png-a19e8ef17c33ef37c3740371ed01aaf8.ctex"
+uid="uid://hiit2141kpoa"
+path="res://.godot/imported/Shop.png-966fce430feb0b4de61233e958ed55a9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://SCRIPTS/addons/FloorArchitect/icon_p.png"
-dest_files=["res://.godot/imported/icon_p.png-a19e8ef17c33ef37c3740371ed01aaf8.ctex"]
+source_file="res://SPRITE SHEETS/Shop.png"
+dest_files=["res://.godot/imported/Shop.png-966fce430feb0b4de61233e958ed55a9.ctex"]
 
 [params]
 
