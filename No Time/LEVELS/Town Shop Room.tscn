@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=4 uid="uid://cjrdvehchi33"]
 
-[ext_resource type="Texture2D" uid="uid://hiit2141kpoa" path="res://SPRITE SHEETS/Shop.png" id="1_fnmk1"]
+[ext_resource type="Texture2D" uid="uid://hiit2141kpoa" path="res://SPRITE SHEETS/Shop Inside.png" id="1_fnmk1"]
 [ext_resource type="Script" uid="uid://c12mddgt848wb" path="res://SCRIPTS/Shop Exit.gd" id="2_dvd1e"]
 [ext_resource type="PackedScene" uid="uid://crotavunc6gnd" path="res://CHARACTERS/Player.tscn" id="4_qi2y6"]
 

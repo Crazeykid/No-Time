@@ -1,6 +1,6 @@
 [gd_scene load_steps=24 format=3 uid="uid://b0pj3fduqd180"]
 
-[ext_resource type="Texture2D" uid="uid://dhu4yhoj7i7e3" path="res://SPRITE SHEETS/NO TIME BASEPLATE SHEET.png" id="1_saxn1"]
+[ext_resource type="Texture2D" uid="uid://dhu4yhoj7i7e3" path="res://SPRITE SHEETS/Town Sheet.png" id="1_saxn1"]
 [ext_resource type="Script" uid="uid://b8y7amgusjya2" path="res://SCRIPTS/Shop Entrance.gd" id="2_2223s"]
 [ext_resource type="PackedScene" uid="uid://cjrdvehchi33" path="res://LEVELS/Town Shop Room.tscn" id="3_2223s"]
 
