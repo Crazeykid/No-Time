@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bf22x081h652h" path="res://SCRIPTS/player.gd" id="1_dywot"]
 [ext_resource type="Texture2D" uid="uid://dhu4yhoj7i7e3" path="res://SPRITE SHEETS/NO TIME BASEPLATE SHEET.png" id="2_ij6vw"]
-[ext_resource type="PackedScene" uid="uid://bcue6m8u6ar0w" path="res://MODELS/shotgun.tscn" id="2_ncs21"]
+[ext_resource type="PackedScene" uid="uid://bcue6m8u6ar0w" path="res://WEAPONS/shotgun.tscn" id="2_ncs21"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lhvu3"]
 size = Vector2(14, 16)

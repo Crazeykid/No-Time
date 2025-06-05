@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://bcue6m8u6ar0w"]
 
-[ext_resource type="Script" uid="uid://d3ysteub1vinv" path="res://SCRIPTS/shotgun.gd" id="1_gfvgi"]
+[ext_resource type="Script" path="res://SCRIPTS/shotgun.gd" id="1_gfvgi"]
 [ext_resource type="Texture2D" uid="uid://ck3b84ny5o5md" path="res://SPRITE SHEETS/Guns.png" id="2_hktu7"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_a8mn3"]
