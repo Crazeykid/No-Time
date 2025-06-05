@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=3 uid="uid://d11bmt0bsn4b4"]
+
+[ext_resource type="Script" uid="uid://ebeugeqws7b1" path="res://SCRIPTS/knight.gd" id="1_nsuie"]
+[ext_resource type="Texture2D" uid="uid://fff45riu6ebs" path="res://SPRITE SHEETS/Floor 1 mobs.png" id="1_owtlo"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nsuie"]
+atlas = ExtResource("1_owtlo")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_26ldq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nsuie")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_np0bx"]
+size = Vector2(16, 16)
+
+[node name="knight" type="CharacterBody2D"]
+script = ExtResource("1_nsuie")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_26ldq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_np0bx")

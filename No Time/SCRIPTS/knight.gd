@@ -8,7 +8,7 @@ func _physics_process(delta: float) -> void:
 	time_since_last_hit += delta
 
 	var direction = global_position.direction_to(player.global_position)
-	velocity = direction * 50
+	velocity = direction * 60
 	move_and_slide()
 
 	for i in range(get_slide_collision_count()):

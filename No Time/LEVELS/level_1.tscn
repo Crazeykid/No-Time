@@ -1,8 +1,10 @@
-[gd_scene load_steps=9 format=4 uid="uid://b2oxd072d7tiv"]
+[gd_scene load_steps=11 format=4 uid="uid://b2oxd072d7tiv"]
 
 [ext_resource type="Texture2D" uid="uid://dhu4yhoj7i7e3" path="res://SPRITE SHEETS/NO TIME BASEPLATE SHEET.png" id="1_mwuyk"]
 [ext_resource type="PackedScene" uid="uid://crotavunc6gnd" path="res://MODELS/Player.tscn" id="2_bg5p5"]
 [ext_resource type="PackedScene" uid="uid://ggqrfa2ox7yq" path="res://MODELS/slime.tscn" id="3_bg5p5"]
+[ext_resource type="PackedScene" uid="uid://d11bmt0bsn4b4" path="res://MODELS/knight.tscn" id="4_ckta0"]
+[ext_resource type="PackedScene" uid="uid://q62wy18qrxec" path="res://MODELS/goblin.tscn" id="5_ywruy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uyir5"]
 texture = ExtResource("1_mwuyk")
@@ -98,4 +100,10 @@ unique_name_in_owner = true
 position = Vector2(575, 400)
 
 [node name="Slime" parent="." instance=ExtResource("3_bg5p5")]
-position = Vector2(615, 338)
+position = Vector2(712, 166)
+
+[node name="knight" parent="." instance=ExtResource("4_ckta0")]
+position = Vector2(584, 168)
+
+[node name="goblin" parent="." instance=ExtResource("5_ywruy")]
+position = Vector2(486, 167)
