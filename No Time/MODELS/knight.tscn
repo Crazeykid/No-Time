@@ -22,6 +22,8 @@ animations = [{
 size = Vector2(16, 16)
 
 [node name="knight" type="CharacterBody2D"]
+light_mask = 3
+visibility_layer = 3
 script = ExtResource("1_nsuie")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

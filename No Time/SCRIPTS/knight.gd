@@ -15,5 +15,5 @@ func _physics_process(delta: float) -> void:
 		var collision = get_slide_collision(i)
 		if collision.get_collider() == player and time_since_last_hit >= damage_cooldown:
 			if player.has_method("take_damage"):
-				player.take_damage(5)
+				player.take_damage(20)
 				time_since_last_hit = 0.0
