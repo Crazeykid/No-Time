@@ -10,9 +10,9 @@ var time_since_last_hit := 0.0
 
 var detection_range := 75.0  # Distance for dash start
 var dash_speed := 500.0       # Speed during dash
-var normal_speed := 60.0      # Normal movement speed
+var normal_speed := 60.0
 
-var is_waiting := false       # True when knight is stopped and waiting to dash
+var is_waiting := false       # True when knight is stopped and waiting
 var wait_time := 0.5          # Time to wait before dashing
 var wait_timer := 0.0         # Timer counting how long knight has waited
 var is_dashing := false       # True while knight is dashing
