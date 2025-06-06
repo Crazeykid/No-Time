@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ck3b84ny5o5md"
-path="res://.godot/imported/Guns.png-0e4cc5f3e5e6c13c56bf98808f559943.ctex"
+uid="uid://l3oua0qulebn"
+path="res://.godot/imported/Hospital Outside.png-8318e45ac08f7d0f74e41f7ec5f0ce3c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://SPRITE SHEETS/Guns.png"
-dest_files=["res://.godot/imported/Guns.png-0e4cc5f3e5e6c13c56bf98808f559943.ctex"]
+source_file="res://SPRITE SHEETS/Hospital Outside.png"
+dest_files=["res://.godot/imported/Hospital Outside.png-8318e45ac08f7d0f74e41f7ec5f0ce3c.ctex"]
 
 [params]
 

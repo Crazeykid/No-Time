@@ -1,17 +1,17 @@
 [gd_scene load_steps=5 format=3 uid="uid://t0je444ggxcq"]
 
 [ext_resource type="Script" uid="uid://c86jywac45jag" path="res://SCRIPTS/Gun scrpt.gd" id="1_jub0h"]
-[ext_resource type="Texture2D" uid="uid://d2b8l3m7ujcn7" path="res://SPRITE SHEETS/Gun.png" id="2_s513d"]
+[ext_resource type="Texture2D" uid="uid://cy5wia2ocq3td" path="res://SPRITE SHEETS/Weapons.png" id="2_144na"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_vu47p"]
-atlas = ExtResource("2_s513d")
-region = Rect2(0, 0, 16, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_pl58i"]
+atlas = ExtResource("2_144na")
+region = Rect2(48, 16, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_03irm"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_vu47p")
+"texture": SubResource("AtlasTexture_pl58i")
 }],
 "loop": true,
 "name": &"default",
@@ -28,4 +28,4 @@ position = Vector2(20, 0)
 sprite_frames = SubResource("SpriteFrames_03irm")
 
 [node name="Barrel" type="Marker2D" parent="PivotPoint/AnimatedSprite2D"]
-position = Vector2(8, -4.5)
+position = Vector2(5, -1.5)
