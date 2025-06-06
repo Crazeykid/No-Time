@@ -78,7 +78,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_macxp"]
-size = Vector2(14, 12)
+size = Vector2(16, 13)
 
 [node name="goblin" type="CharacterBody2D"]
 light_mask = 3
@@ -88,8 +88,8 @@ script = ExtResource("1_u6mjv")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_vu5tg")
 animation = &"Down Walk"
-frame_progress = 0.271339
+frame_progress = 0.0187013
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 2)
+position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_macxp")

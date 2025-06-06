@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://rlihwrc7emhj" path="res://MODELS/healthtimer.tscn" id="4_rtpnf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lhvu3"]
-size = Vector2(12, 16)
+size = Vector2(10, 15)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_a4bjt"]
 atlas = ExtResource("2_rtpnf")
@@ -112,12 +112,13 @@ animations = [{
 script = ExtResource("1_dywot")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_lhvu3")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_dd465")
 animation = &"Down Walk"
-frame_progress = 0.404517
+frame_progress = 0.0480745
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(5, 5)
