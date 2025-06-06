@@ -1,5 +1,8 @@
 extends CharacterBody2D
 
+func _ready() -> void:
+	motion_mode = MOTION_MODE_FLOATING
+
 @onready var player = get_node("%Player")
 var damage_cooldown := 1.0
 var time_since_last_hit := 0.0

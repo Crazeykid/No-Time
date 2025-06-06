@@ -4,11 +4,14 @@ extends CharacterBody2D
 var damage_cooldown := 1.0
 var time_since_last_hit := 0.0
 
+func _ready() -> void:
+	motion_mode = MOTION_MODE_FLOATING
+
 func _physics_process(delta: float) -> void:
 	time_since_last_hit += delta
 
 	var direction = global_position.direction_to(player.global_position)
-	velocity = direction * 70
+	velocity = direction * 100
 	move_and_slide()
 
 	for i in range(get_slide_collision_count()):
