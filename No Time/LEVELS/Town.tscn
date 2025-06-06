@@ -98,7 +98,6 @@ tile_map_data = PackedByteArray("AAAYAB0AAAAAAAIAAAAdACIAAAAAAAIAAAAcACIAAAAAAAI
 tile_set = SubResource("TileSet_bg5p5")
 
 [node name="Player" parent="." instance=ExtResource("2_881qv")]
-unique_name_in_owner = true
 position = Vector2(575, 400)
 
 [node name="Slime" parent="." instance=ExtResource("3_osd66")]

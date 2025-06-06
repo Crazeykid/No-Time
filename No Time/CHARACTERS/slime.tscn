@@ -1,21 +1,66 @@
-[gd_scene load_steps=6 format=3 uid="uid://ggqrfa2ox7yq"]
+[gd_scene load_steps=11 format=3 uid="uid://ggqrfa2ox7yq"]
 
-[ext_resource type="Texture2D" uid="uid://fff45riu6ebs" path="res://SPRITE SHEETS/Floor 1 mobs.png" id="1_2d52u"]
 [ext_resource type="Script" uid="uid://dniaeqimlji8e" path="res://SCRIPTS/slime.gd" id="1_m2yph"]
+[ext_resource type="Texture2D" uid="uid://c5b2pgh6vnb7d" path="res://SPRITE SHEETS/Animation Sheet.png" id="2_w7emw"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_5jc4t"]
-atlas = ExtResource("1_2d52u")
-region = Rect2(32, 0, 16, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_w7emw"]
+atlas = ExtResource("2_w7emw")
+region = Rect2(16, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wy0fk"]
+atlas = ExtResource("2_w7emw")
+region = Rect2(32, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r45ob"]
+atlas = ExtResource("2_w7emw")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ax2lw"]
+atlas = ExtResource("2_w7emw")
+region = Rect2(16, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ua3u7"]
+atlas = ExtResource("2_w7emw")
+region = Rect2(64, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_55ee4"]
+atlas = ExtResource("2_w7emw")
+region = Rect2(80, 16, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_4l1t8"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_5jc4t")
+"texture": SubResource("AtlasTexture_w7emw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wy0fk")
 }],
 "loop": true,
-"name": &"default",
-"speed": 5.0
+"name": &"Down Walk",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r45ob")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ax2lw")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ua3u7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_55ee4")
+}],
+"loop": true,
+"name": &"Up Walk",
+"speed": 4.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ppcr1"]
@@ -28,6 +73,8 @@ script = ExtResource("1_m2yph")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_4l1t8")
+animation = &"Up Walk"
+frame_progress = 0.669666
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 4)
