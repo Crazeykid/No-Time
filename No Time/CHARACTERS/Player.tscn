@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://crotavunc6gnd"]
+[gd_scene load_steps=8 format=3 uid="uid://crotavunc6gnd"]
 
 [ext_resource type="Script" uid="uid://bf22x081h652h" path="res://SCRIPTS/player.gd" id="1_dywot"]
 [ext_resource type="Texture2D" uid="uid://dhu4yhoj7i7e3" path="res://SPRITE SHEETS/Town Sheet.png" id="2_ij6vw"]
 [ext_resource type="PackedScene" uid="uid://bcue6m8u6ar0w" path="res://WEAPONS/shotgun.tscn" id="2_ncs21"]
+[ext_resource type="PackedScene" uid="uid://rlihwrc7emhj" path="res://MODELS/healthtimer.tscn" id="4_rtpnf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lhvu3"]
 size = Vector2(12, 16)
@@ -36,3 +37,7 @@ zoom = Vector2(5, 5)
 position_smoothing_speed = 8.0
 
 [node name="Shotgun" parent="." instance=ExtResource("2_ncs21")]
+
+[node name="Player Health" parent="." instance=ExtResource("4_rtpnf")]
+z_index = 1
+position = Vector2(-115, -64)

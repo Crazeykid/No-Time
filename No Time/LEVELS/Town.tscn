@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://ggqrfa2ox7yq" path="res://CHARACTERS/slime.tscn" id="3_osd66"]
 [ext_resource type="PackedScene" uid="uid://d11bmt0bsn4b4" path="res://CHARACTERS/knight.tscn" id="4_tsff0"]
 [ext_resource type="PackedScene" uid="uid://q62wy18qrxec" path="res://CHARACTERS/goblin.tscn" id="5_dhi4i"]
-[ext_resource type="PackedScene" uid="uid://b0pj3fduqd180" path="res://LEVELS/Town Shop Building.tscn" id="6_a7hon"]
+[ext_resource type="PackedScene" uid="uid://b0pj3fduqd180" path="res://MODELS/Town Shop Building.tscn" id="6_a7hon"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uyir5"]
 texture = ExtResource("1_5oxvw")

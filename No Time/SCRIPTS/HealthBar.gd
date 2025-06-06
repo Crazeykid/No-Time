@@ -1,22 +1,36 @@
 extends Node2D
-@onready var health: Timer = $Health
+
+@onready var timer: Timer = $Health
 @onready var health_bar: ProgressBar = $HealthBar
-static var timeLeft = 100
-var active = false
 
-func beginGame() -> void:
-	health.start(timeLeft)
-	set_health_bar()
+var time_left: float = 100.0
+var active := false
+
+func _ready() -> void:
+	timer.wait_time = 1.0
+	timer.one_shot = false
+	timer.timeout.connect(_on_Timer_timeout)
+	begin_game()
+
+func begin_game() -> void:
+	time_left = 100.0
+	health_bar.max_value = 100.0
+	health_bar.value = time_left
 	active = true
-	while(active):
-		set_health_bar()
-		print(health)
+	timer.start()
 
-func _input(event: InputEvent) -> void:
-	beginGame()
+func _on_Timer_timeout() -> void:
+	if active:
+		apply_damage(1.0)
 
-func set_health_bar() -> void:
-	$HealthBar.value = health
+func apply_damage(amount: float) -> void:
+	time_left -= amount
+	health_bar.value = time_left
+	print("Health now:", time_left)
+	if time_left <= 0.0:
+		die()
 
-func _on_TimerTimeout() -> void:
-	queue_free()
+func die() -> void:
+	active = false
+	timer.stop()
+	print("Player died.")
